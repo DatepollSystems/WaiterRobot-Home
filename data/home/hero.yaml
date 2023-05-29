@@ -2,14 +2,14 @@ enabled: true
 id: "hero"
 
 content:
-  title: "How to **level up** your business"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+  title: "Wie du deine **Bestellaufnamen** digitalisierst"
+  text: "Egal ob sich um ein einmaliges Event oder dauerhafte Bewirtung handelt, WaiterRobot beschleunigt deinen Prozess im Servicebereich."
 
   buttonPrimary:
-    label: "How we work"
+    label: "Was wir anbieten"
     url: "#"
 
   buttonSecondary:
-    label: "Let's talk"
-    url: ""
+    label: "Kontaktiere uns"
+    url: "mailto:hallo@kellner.team"
 

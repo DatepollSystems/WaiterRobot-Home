@@ -2,8 +2,8 @@ enabled: true
 id: "hero"
 
 content:
-  title: "Wie du deine **Bestellaufnamen** digitalisierst"
-  text: "Egal ob sich um ein einmaliges Event oder dauerhafte Bewirtung handelt, WaiterRobot beschleunigt deinen Prozess im Servicebereich."
+  title: "**blitzschnelle** und **einfache** Gastronomie"
+  text: "Egal ob sich um ein einmaliges Event oder dauerhafte Bewirtung handelt, kellner.team beschleunigt deinen Prozess im Servicebereich."
 
   buttonPrimary:
     label: "Was wir anbieten"

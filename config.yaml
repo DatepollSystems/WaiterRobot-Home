@@ -10,7 +10,7 @@ summaryLength: 20
 
 params:
   title: "kellner.team"
-  description: "Mit WaiterRobot hast du die Möglichkeit, deine Bestellungsaufnahme digital zu erledigen. Egal ob sich um ein einmaliges Event oder dauerhafte Bewirtung handelt, WaiterRobot beschleunigt deinen Prozess im Servicebereich."
+  description: "Mit WaiterRobot hast du die Möglichkeit, deine Bestellungsaufnahme digital zu erledigen."
   images: 
     - "images/hero-image.png"
 
@@ -39,38 +39,26 @@ params:
 menus:
   main:
     - name: "Home"
-      url: "/#hero"
+      url: "/"
       weight: 1
-
-    - name: "How we work"
-      url: "/#"
-      weight: 2
-
-    - name: "Our team"
-      url: "/#"
-      weight: 3
 
     - name: "Pricing"
       url: "/#"
-      weight: 4
+      weight: 2
 
     - name: "Blog"
       url: "/blog"
-      weight: 5
+      weight: 3
 
   buttons:
-    - name: "Book a call"
-      url: "/#"
+    - name: "Kontaktiere uns"
+      url: "mailto:hallo@kellner.team"
       weight: 5
       pre: "btn btn-primary text-light"
 
   footer:
-    - name: "Home"
-      url: "/#hero"
-      weight: 1
-
-    - name: "How we work"
-      url: "/#"
+    - name: "Datenschutz"
+      url: "/data-privacy"
       weight: 2
 
 

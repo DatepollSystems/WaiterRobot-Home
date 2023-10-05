@@ -29,15 +29,16 @@ defaults:
 
 jobs:
   build:
+    # <Not provided for brevity>
+    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
     runs-on: ubuntu-latest
     steps:
-      - name: Package
-        uses: actions/upload-artifact@master
+      - uses: actions/checkout@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
           path: ./
-          if-no-files-found: error
-
 
   # Deployment job
   deploy:

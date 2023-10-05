@@ -1,8 +1,0 @@
-enabled: true
-id: "brands"
-
-content:
-  title: "Wir arbeiten mit Kunden in jeder Größe"
-  items:
-    - "images/brands/bke.png"
-    - "images/brands/ffdrosendorf.png"

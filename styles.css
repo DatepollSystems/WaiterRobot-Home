@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+/* Base container styles */
+.container {
+    width: 100%; /* Container takes 100% width by default */
+    max-width: 1500px; /* Maximum container width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding for content */
+    box-sizing: border-box; /* Include padding and border in the total width */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+@font-face {
+    font-family: LogoFont;
+    src: url(MontserratAlternates-Bold.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: Rubik;
+    src: url(Rubik-Medium.ttf) format('truetype');
+}
+
+header {
+    background-color: #EBEFFF;
+    padding: 1.25rem 2.1875rem;
+    border-radius: 0.31rem;
+
+    & div {
+        display: flex;
+        align-items: center;
+    }
+
+    & a {
+        text-decoration: none;
+        color: black;
+        font-family: Rubik, serif;
+        font-size: 1.0625rem;
+        line-height: 1.25rem;
+
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+
+    .primary {
+        border-radius: 0.3125rem;
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #FFF;
+        background-color: #FA9646;
+        padding: 0.625rem;
+    }
+
+
+    .primary:hover {
+        text-decoration: none;
+    }
+}
+
+.logo {
+    font-family: LogoFont, serif;
+
+    .suffix {
+        color: #FA9646;
+    }
+}
+
+.logo-row {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.logo-row:hover {
+    text-decoration: none;
+}
+
+.hero {
+    border-radius: 0.3125rem;
+    background: #1B2347;
+    padding: 2rem 2rem 2rem 7.12rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding: 0 7rem 0 7rem;
+
+    & h3 {
+        color: #FA9646;
+        text-align: center;
+        font-family: Montserrat, serif;
+        font-size: 3.4375rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    & p {
+        color: #1B2347;
+        text-align: center;
+        font-family: Montserrat serif;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        & b {
+            font-size: 1.5625rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.title {
+    margin-top: 10rem;
+    color: #1B2347;
+    font-family: LogoFont, serif;
+    font-size: 5.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    z-index: 100;
+}
+
+.title-box {
+    z-index: -10;
+    content: "";
+    position: absolute;
+    left: -40%;
+    width: 100%;
+    margin-top: -50px;
+    height: 5rem;
+    border-radius: 0 0.3125rem 0.3125rem 0;
+    background: #FA9646;
+}

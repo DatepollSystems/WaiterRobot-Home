@@ -1,0 +1,19 @@
+<svg width="94" height="35" viewBox="0 0 94 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Component 11">
+        <ellipse id="Ellipse 9" cx="17.6475" cy="17.5889" rx="17.6475" ry="17.4112" fill="#1B2347"/>
+        <ellipse id="Ellipse 10" cx="76.3526" cy="17.4112" rx="17.6475" ry="17.4112" fill="#1B2347"/>
+        <rect id="Rectangle 7" x="17.6475" y="0.177734" width="58.705" height="34.8223" fill="#1B2347"/>
+        <g id="Ellipse 13">
+            <ellipse cx="19.8984" cy="18.0328" rx="9.81418" ry="9.68274" fill="white"/>
+            <ellipse cx="19.8984" cy="18.0328" rx="9.81418" ry="9.68274" fill="white"/>
+            <ellipse cx="19.8984" cy="18.0328" rx="9.81418" ry="9.68274" fill="white"/>
+        </g>
+        <g id="Ellipse 14">
+            <ellipse cx="75.362" cy="18.0328" rx="9.81418" ry="9.68274" fill="white"/>
+            <ellipse cx="75.362" cy="18.0328" rx="9.81418" ry="9.68274" fill="white"/>
+            <ellipse cx="75.362" cy="18.0328" rx="9.81418" ry="9.68274" fill="white"/>
+        </g>
+        <ellipse id="Ellipse 11" cx="19.8083" cy="17.9442" rx="6.66284" ry="6.5736" fill="#D4DBFA"/>
+        <ellipse id="Ellipse 12" cx="75.4521" cy="18.1219" rx="6.66284" ry="6.5736" fill="#D4DBFA"/>
+    </g>
+</svg>

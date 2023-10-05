@@ -25,13 +25,13 @@ body {
 
 @font-face {
     font-family: LogoFont;
-    src: url(MontserratAlternates-Bold.ttf) format('truetype');
+    src: url(fonts/MontserratAlternates-Bold.ttf) format('truetype');
 }
 
 
 @font-face {
     font-family: Rubik;
-    src: url(Rubik-Medium.ttf) format('truetype');
+    src: url(fonts/Rubik-Medium.ttf) format('truetype');
 }
 
 header {

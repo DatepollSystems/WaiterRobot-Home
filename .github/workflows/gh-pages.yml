@@ -29,12 +29,10 @@ defaults:
 
 jobs:
   build:
-    # <Not provided for brevity>
-    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
     runs-on: ubuntu-latest
     steps:
       - name: Package
-      - uses: actions/upload-artifact@master
+        uses: actions/upload-artifact@master
         with:
           name: github-pages
           path: ./

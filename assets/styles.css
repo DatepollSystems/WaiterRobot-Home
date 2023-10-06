@@ -1,7 +1,35 @@
+@font-face {
+    font-family: LogoFont;
+    src: url(fonts/MontserratAlternates-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: MyMontserrat;
+    src: url(fonts/Montserrat-Light.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: MyMontserrat;
+    src: url(fonts/Montserrat-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: MyMontserrat;
+    src: url(fonts/Montserrat-SemiBold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #FFF;
+    font-family: MyMontserrat, serif;
 }
 
 /* Base container styles */
@@ -23,17 +51,6 @@ body {
     }
 }
 
-@font-face {
-    font-family: LogoFont;
-    src: url(fonts/MontserratAlternates-Bold.ttf) format('truetype');
-}
-
-
-@font-face {
-    font-family: Rubik;
-    src: url(fonts/Rubik-Medium.ttf) format('truetype');
-}
-
 header {
     background-color: #EBEFFF;
     padding: 1.25rem 2.1875rem;
@@ -47,8 +64,8 @@ header {
     & a {
         text-decoration: none;
         color: black;
-        font-family: Rubik, serif;
         font-size: 1.0625rem;
+        font-weight: 500;
         line-height: 1.25rem;
 
     }
@@ -106,7 +123,6 @@ header {
     & h3 {
         color: #FA9646;
         text-align: center;
-        font-family: Montserrat, serif;
         font-size: 3.4375rem;
         font-style: normal;
         font-weight: 700;
@@ -116,7 +132,6 @@ header {
     & p {
         color: #1B2347;
         text-align: center;
-        font-family: Montserrat serif;
         font-size: 1.5625rem;
         font-style: normal;
         font-weight: 400;
@@ -150,4 +165,106 @@ header {
     height: 5rem;
     border-radius: 0 0.3125rem 0.3125rem 0;
     background: #FA9646;
+}
+
+.subtitle {
+    color: #000;
+    text-align: center;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.quote {
+    padding: 2rem;
+    background-color: #DFE4FB;
+    mix-blend-mode: darken;
+    filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.10));
+    border-radius: 2.5rem;
+    max-width: 35rem;
+
+    .text {
+        margin-bottom: 5rem;
+        color: #000;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .person {
+        color: #000;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: normal;
+
+        & b {
+            font-weight: 700;
+        }
+    }
+}
+
+.work {
+    margin-top: 3rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: space-around;
+
+    .img-step-box {
+        flex: 45%
+    }
+
+    .img-step {
+        width: 25rem;
+        height: 25rem;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .work-step-box {
+        flex: 45%;
+    }
+
+    .work-step {
+        margin: 8rem auto 8rem auto;
+        border-radius: 1.5625rem;
+        background: #EBEFFF;
+        display: flex;
+        max-width: 28rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.5rem;
+        padding-right: 3rem;
+        padding-left: 3rem;
+
+        .step-count {
+            border-radius: 0 0 0.3125rem 0.3125rem;
+            background: #1B2347;
+            color: #FFF;
+            max-width: 10rem;
+            text-align: center;
+            font-family: MyMontserrat, serif;
+            font-size: 1.5625rem;
+            font-weight: 700;
+            padding: 0.5rem 2.75rem 0.5rem 2.75rem;
+        }
+
+        & h3 {
+            color: #1B2347;
+            text-align: center;
+            font-family: MyMontserrat, serif;
+            font-size: 1.5625rem;
+            font-weight: 700;
+        }
+
+        & p {
+            color: #000;
+            text-align: center;
+            font-family: MyMontserrat, serif;
+            font-size: 0.9375rem;
+            font-weight: 700;
+        }
+    }
 }

@@ -99,14 +99,99 @@
             <div class="title-box"></div>
         </h2>
 
-        <div style="height: 2000px"></div>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; justify-content: space-around; padding: 2rem; background-color: #EBEFFF; width: 100%; height: 30rem">
+            <div style="background-color: white; width: 24rem; height: 28rem">
+                Feuerwehr Fest
+            </div>
+
+            <div style="background-color: white; width: 24rem; height: 28rem">
+                Feuerwehr Fest
+            </div>
+        </div>
+
+        <h3 class="subtitle">Was unsere Kunden über uns sagen</h3>
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; justify-content: space-around; padding: 2rem;">
+            <div class="quote">
+                <img src="assets/quote.svg" alt="quote">
+                <p class="text">Von Ankauf bis zum Event durchgehen kompetente Beratung. Wir waren sehr zufrieden.</p>
+                <p class="person">Hermi Hogl, <b>Feuerwehrfest Mödring</b></p>
+            </div>
+
+            <div class="quote">
+                <img src="assets/quote.svg" alt="quote">
+                <p class="text">Von Ankauf bis zum Event durchgehen kompetente Beratung. Wir waren sehr zufrieden.</p>
+                <p class="person">Hermi Hogl, <b>Feuerwehrfest Mödring</b></p>
+            </div>
+        </div>
 
         <h2 class="title" id="how-it-works">
             so funktioniert’s.
             <div class="title-box"></div>
         </h2>
 
-        <div style="height: 2000px"></div>
+        <div class="work">
+            <div class="work-step-box">
+                <div class="work-step">
+                    <div class="step-count">1. Schritt</div>
+                    <h3>Angebot</h3>
+                    <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+                </div>
+            </div>
+
+            <div class="img-step-box">
+                <img class="img-step" src="assets/steps/step1.png">
+            </div>
+
+            <div class="img-step-box">
+                <img style="height: 23rem; width: 11rem;  margin-left: 35%;
+        margin-right: 35%;" src="assets/steps/screenshot.png">
+            </div>
+
+            <div class="work-step-box">
+                <div class="work-step">
+                    <div class="step-count">2. Schritt</div>
+                    <h3>Angebot</h3>
+                    <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+                </div>
+            </div>
+
+            <div class="work-step-box">
+                <div class="work-step">
+                    <div class="step-count">3. Schritt</div>
+                    <h3>Angebot</h3>
+                    <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+                </div>
+            </div>
+
+            <div class="img-step-box">
+                <img class="img-step" src="assets/steps/step2.png">
+            </div>
+
+
+            <div class="img-step-box">
+                <img class="img-step" src="assets/steps/step3.png">
+            </div>
+
+            <div class="work-step-box">
+                <div class="work-step">
+                    <div class="step-count">4. Schritt</div>
+                    <h3>Angebot</h3>
+                    <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+                </div>
+            </div>
+
+            <div class="work-step-box">
+                <div class="work-step">
+                    <div class="step-count">5. Schritt</div>
+                    <h3>Angebot</h3>
+                    <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+                </div>
+            </div>
+
+            <div class="img-step-box">
+                <img class="img-step" src="assets/steps/step4.png">
+            </div>
+        </div>
 
         <h2 class="title" id="price">
             preise.
@@ -140,6 +225,9 @@
                     top: targetElement.offsetTop,
                     behavior: 'smooth'
                 });
+
+                // Update the URL without triggering a full page reload
+                history.pushState({}, '', `#${targetId}`);
             }
         });
     });

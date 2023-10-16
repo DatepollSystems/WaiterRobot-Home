@@ -1,0 +1,301 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+// 5. Include remainder of required parts
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/containers";
+
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import "../../node_modules/bootstrap/scss/carousel";
+
+
+@font-face {
+  font-family: LogoFont;
+  src: url(fonts/MontserratAlternates-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: MyMontserrat;
+  src: url(fonts/Montserrat-Light.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyMontserrat;
+  src: url(fonts/Montserrat-Medium.ttf) format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: MyMontserrat;
+  src: url(fonts/Montserrat-SemiBold.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, body {
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
+  background-color: #FFF;
+  font-family: MyMontserrat, serif;
+}
+
+h2 {
+  margin-top: 10rem;
+  color: #1B2347;
+  font-family: LogoFont, serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  box-shadow: inset 0 -0.65em 0 0 #FA9646;
+  left: -20%;
+  padding-left: 25%;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1201px) {
+  h2 {
+    font-size: 5.625rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.5625rem;
+  }
+}
+
+header {
+  background-color: #EBEFFF;
+
+  & a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+
+  .primary {
+    border-radius: 0.3125rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #FA9646;
+    padding: 0.625rem;
+  }
+
+  .primary:hover {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  font-family: LogoFont, serif;
+
+  .suffix {
+    color: #FA9646;
+  }
+}
+
+.description {
+  & h3 {
+    color: #FA9646;
+    text-align: center;
+  }
+
+  & p {
+    color: #1B2347;
+    text-align: center;
+
+    & b {
+      font-weight: 700;
+    }
+  }
+}
+
+
+.subtitle {
+  color: #000;
+  text-align: center;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.quote {
+  padding: 2rem;
+  background-color: #DFE4FB;
+  mix-blend-mode: darken;
+  filter: drop-shadow(0px 30px 60px rgba(0, 0, 0, 0.10));
+  border-radius: 2.5rem;
+  max-width: 35rem;
+
+  .text {
+    margin-bottom: 5rem;
+    color: #000;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .person {
+    color: #000;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: normal;
+
+    & b {
+      font-weight: 700;
+    }
+  }
+}
+
+.work {
+  margin-top: 3rem;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  justify-content: space-around;
+
+  .img-step-box {
+    flex: 45%
+  }
+
+  .img-step {
+    width: 25rem;
+    height: 25rem;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .work-step-box {
+    flex: 45%;
+  }
+
+  .work-step {
+    margin: 8rem auto 8rem auto;
+    border-radius: 1.5625rem;
+    background: #EBEFFF;
+    display: flex;
+    max-width: 28rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+    .step-count {
+      border-radius: 0 0 0.3125rem 0.3125rem;
+      background: #1B2347;
+      color: #FFF;
+      max-width: 10rem;
+      text-align: center;
+      font-family: MyMontserrat, serif;
+      font-size: 1.5625rem;
+      font-weight: 700;
+      padding: 0.5rem 2.75rem 0.5rem 2.75rem;
+    }
+
+    & h3 {
+      color: #1B2347;
+      text-align: center;
+      font-family: MyMontserrat, serif;
+      font-size: 1.5625rem;
+      font-weight: 700;
+    }
+
+    & p {
+      color: #000;
+      text-align: center;
+      font-family: MyMontserrat, serif;
+      font-size: 0.9375rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}

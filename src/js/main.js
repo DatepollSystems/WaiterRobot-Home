@@ -1,4 +1,5 @@
 import "../assets/styles.scss";
+import "../assets/animate.scss";
 import "../assets/carousel.scss";
 // noinspection ES6UnusedImports
 import Carousel from "bootstrap/js/dist/carousel";

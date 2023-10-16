@@ -14,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <script type="module" src="./js/main.js"></script>
+    <script defer src="./js/animate.js"></script>
 
     <!-- language specific keywords -->
     <meta name="keywords" lang="en-us" content="vacation, Greece, sunshine"/>
@@ -41,6 +42,8 @@
     />
     <meta property="og:image:width" content="1400"/>
     <meta property="og:image:height" content="547"/>
+
+
 </head>
 <body>
 <div class="container-lg d-flex flex-column gap-4 pt-3">
@@ -105,7 +108,7 @@
             </p>
         </div>
 
-        <h2 id="rating _title">veranstaltungen.</h2>
+        <h2 id="rating" class="_title">veranstaltungen.</h2>
 
         <div
                 class="row mx-auto my-auto justify-content-center p-2 p-md-5"
@@ -217,8 +220,8 @@
 
         <h3 class="_subtitle pt-5 pb-3">Was unsere Kunden über uns sagen</h3>
 
-        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-around">
-            <div class="col">
+        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-around" id="quotes">
+            <div class="col hidden">
                 <div class="quote p-4">
                     <img src="assets/quote.svg" alt="quote">
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -226,39 +229,42 @@
                     <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
                 </div>
             </div>
-
-            <div class="col">
+            <div class="col hidden">
                 <div class="quote p-4">
                     <img src="assets/quote.svg" alt="quote">
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col hidden">
                 <div class="quote p-4">
                     <img src="assets/quote.svg" alt="quote">
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
                         ullamco laboris nisi.</p>
                     <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col hidden">
                 <div class="quote p-4">
                     <img src="assets/quote.svg" alt="quote">
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
                 </div>
             </div>
-            <div class="col">
+            <div class="col hidden">
                 <div class="quote p-4">
                     <img src="assets/quote.svg" alt="quote">
                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
                 </div>
@@ -272,81 +278,109 @@
 
         <div class="work row row-cols-1 row-cols-md-2 g-5 align-items-center justify-content-center">
             <div class="col">
-                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto" style="max-width: 70%">
-                            <span class="step-count px-5 py-1 rounded-bottom-2">1. Schritt</span>
+                <div class="hidden">
+                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                         style="max-width: 70%">
+                        <span class="step-count px-5 py-1 rounded-bottom-2">1. Schritt</span>
                         <h3>Angebot</h3>
                         <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
                     </div>
-            </div>
-
-            <div class="col">
-                <div class="d-flex justify-content-center">
-                    <img style="max-width: 50%" src="assets/steps/step1.png" alt="">
                 </div>
             </div>
 
             <div class="col">
-                <div class="d-flex justify-content-center">
-                    <img style="max-width: 40%" src="assets/steps/screenshot.png" alt="">
+                <div class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img style="max-width: 50%" src="assets/steps/step1.png" alt="">
+                    </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto" style="max-width: 70%">
-                    <span class="step-count px-5 py-1 rounded-bottom-2">2. Schritt</span>
-                    <h3>Registrierung</h3>
-                    <p>mit der Buchungsbestätigung senden wird dir die Anmeldedaten für die App
-womit sich alle beteiligten Kellner auf dem eigenen Smartphone anmelden können</p>
-                </div>
-            </div>
-
-
-            <div class="col">
-                <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto" style="max-width: 70%">
-                    <span class="step-count px-5 py-1 rounded-bottom-2">3. Schritt</span>
-                    <h3>Produkte und Tische</h3>
-                    <p>nun können alle Produkte samt Preise und Produktdetails und Tische samt Tischgruppen angelegt werden</p>
+                <div class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img style="max-width: 40%" src="assets/steps/screenshot.png" alt="">
+                    </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="d-flex justify-content-center">
-                    <img style="max-width: 50%" src="assets/steps/step2.png" alt="">
+                <div class="hidden">
+                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                         style="max-width: 70%">
+                        <span class="step-count px-5 py-1 rounded-bottom-2">2. Schritt</span>
+                        <h3>Registrierung</h3>
+                        <p>mit der Buchungsbestätigung senden wird dir die Anmeldedaten für die App
+                            womit sich alle beteiligten Kellner auf dem eigenen Smartphone anmelden können</p>
+                    </div>
+
                 </div>
             </div>
 
 
             <div class="col">
-                <div class="d-flex justify-content-center">
-                    <img style="max-width: 50%" src="assets/steps/step3.png" alt="">
+                <div class="hidden">
+                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                         style="max-width: 70%">
+                        <span class="step-count px-5 py-1 rounded-bottom-2">3. Schritt</span>
+                        <h3>Produkte und Tische</h3>
+                        <p>nun können alle Produkte samt Preise und Produktdetails und Tische samt Tischgruppen angelegt
+                            werden</p>
+                    </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto" style="max-width: 70%">
-                    <span class="step-count px-5 py-1 rounded-bottom-2">4. Schritt</span>
-                    <h3>Drucker</h3>
-                    <p>wenn du im Horner Bezirk wohnst, bringen wir dir die Bondrucker gerne an deinen Veranstaltungsort - hierfür werden pro Drucker pro Tag Gebühren von 40€ verrechnet</p>
+                <div class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img style="max-width: 50%" src="assets/steps/step2.png" alt="">
+                    </div>
                 </div>
             </div>
 
 
             <div class="col">
-                <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto" style="max-width: 70%">
-                    <span class="step-count px-5 py-1 rounded-bottom-2">5. Schritt</span>
-                    <h3>und los geht's</h3>
-                    <p>Auf einen reibungslosen, schnellen Ablauf! <br> Viel Freude damit!</p>
+                <div class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img style="max-width: 50%" src="assets/steps/step3.png" alt="">
+                    </div>
                 </div>
             </div>
 
             <div class="col">
-                <div class="d-flex justify-content-center">
-                    <img style="max-width: 50%" src="assets/steps/step4.png" alt="">
+                <div class="hidden">
+                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                         style="max-width: 70%">
+                        <span class="step-count px-5 py-1 rounded-bottom-2">4. Schritt</span>
+                        <h3>Drucker</h3>
+                        <p>wenn du im Horner Bezirk wohnst, bringen wir dir die Bondrucker gerne an deinen
+                            Veranstaltungsort - hierfür werden pro Drucker pro Tag Gebühren von 40€ verrechnet</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="hidden">
+                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                         style="max-width: 70%">
+                        <span class="step-count px-5 py-1 rounded-bottom-2">5. Schritt</span>
+                        <h3>und los geht's</h3>
+                        <p>Auf einen reibungslosen, schnellen Ablauf! <br> Viel Freude damit!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img style="max-width: 50%" src="assets/steps/step4.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="prices rounded-2 p-5" style="height: 100vh">
+        <div class="prices rounded-2 p-5 mt-5" style="height: 100vh">
             <h2 id="prices" class="_title_price">preise</h2>
         </div>
 

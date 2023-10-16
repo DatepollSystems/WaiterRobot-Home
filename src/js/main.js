@@ -3,21 +3,22 @@ import "../assets/carousel.scss";
 // noinspection ES6UnusedImports
 import Carousel from "bootstrap/js/dist/carousel";
 
-let items = document.querySelectorAll(".carousel .carousel-item");
-
-items.forEach((el) => {
-  const minPerSlide = 4;
-  let next = el.nextElementSibling;
-  for (let i = 1; i < minPerSlide; i++) {
-    if (!next) {
-      // wrap carousel by using first child
-      next = items[0];
+function applyMultiItemCarousel(items, minPerSlide) {
+  items.forEach((el) => {
+    let next = el.nextElementSibling;
+    for (let i = 1; i < minPerSlide; i++) {
+      if (!next) {
+        // wrap carousel by using first child
+        next = items[0];
+      }
+      let cloneChild = next.cloneNode(true);
+      el.appendChild(cloneChild.children[0]);
+      next = next.nextElementSibling;
     }
-    let cloneChild = next.cloneNode(true);
-    el.appendChild(cloneChild.children[0]);
-    next = next.nextElementSibling;
-  }
-});
+  });
+}
+
+applyMultiItemCarousel(document.querySelectorAll("#eventsCarousel .carousel-item"), 4)
 
 // JavaScript code for smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {

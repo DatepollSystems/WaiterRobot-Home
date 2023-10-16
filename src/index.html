@@ -11,7 +11,7 @@
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW"/>
     <meta name="revisit-after" content="7 days"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script type="module" src="./js/main.js"></script>
     <script defer src="./js/animate.js"></script>
@@ -46,351 +46,354 @@
 
 </head>
 <body>
-<div class="container-lg d-flex flex-column gap-4 pt-3">
-    <header
-            class="d-flex flex-wrap justify-content-center justify-content-xl-between px-5 py-4 gap-3 gap-xl-0 rounded-2"
-    >
-        <a
-                class="d-flex gap-2 align-items-center"
-                style="text-decoration: none"
-                href="/"
+<div class="container-lg mx-auto pt-3">
+    <div class="d-flex flex-column gap-4">
+        <header
+                class="d-flex flex-wrap justify-content-center justify-content-xl-between px-5 py-4 gap-3 gap-xl-0 rounded-2"
         >
-            <img src="assets/logo-flat.svg" alt="Logo"/>
-
-            <div
-                    class="logo d-flex"
-                    style="font-size: 1.56rem; line-height: 1.875rem"
+            <a
+                    class="d-flex gap-2 align-items-center"
+                    style="text-decoration: none"
+                    href="/"
             >
-                <span style="color: #1b2347">kellner.</span>
-                <span class="suffix">team</span>
-            </div>
-        </a>
-        <div
-                class="d-flex flex-wrap gap-4 justify-content-around align-items-lg-center"
-        >
-            <div><a href="#about-us">Über uns</a></div>
-            <div><a href="#how-it-works">So funktioniert's</a></div>
-            <div><a href="#rating">Rezensionen</a></div>
-            <div><a href="#price">Preise</a></div>
-            <div>
-                <a href="#contact" class="primary">Kontaktiere uns</a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <img src="assets/hero.svg" alt="Hero image" style="width: 100%"/>
+                <img src="assets/logo-flat.svg" alt="Logo"/>
 
-        <div class="description d-flex flex-column mt-5 px-5" id="about-us">
-            <h3>Was ist kellner.team?</h3>
-            <p>
-                kellner.team ist eine <b>Boniersoftware</b>, welche
-                <b>ohne hohen Geräteaufwand</b> direkt auf den eigenen Smartphones
-                als App downgeloaded werden kann. Durch ihr hohes Maß an
-                Selbsterklärung werden zu den eingesparten Bestellapparenten auch
-                Einschulungskosten gespart.
-            </p>
-        </div>
-
-        <div class="description">
-            <h3>Für wen ist kellner.team?</h3>
-            <p>
-                Egal ob
-                <b
-                >Dorffest, Feuerwehrheurigen, Sportveranstaltung oder andere
-                    Veranstaltungen</b
+                <div
+                        class="logo d-flex"
+                        style="font-size: 1.56rem; line-height: 1.875rem"
                 >
-                an denen Sie sich ein gemütliches Beisammensein mit schneller
-                Verköstigung wünschen, wir haben Ihre einfache Lösung dafür.
-                <br/>
-                <br/>
-                Noch haben wir <b>kein Registrierkassasystem</b>, deshalb verkaufen
-                wir bis auf Weiteres ausschließlich an Vereine.
-            </p>
-        </div>
-
-        <h2 id="rating" class="_title">veranstaltungen.</h2>
-
-        <div
-                class="row mx-auto my-auto justify-content-center p-2 p-md-5"
-                style="background-color: #ebefff"
-        >
-            <div
-                    id="eventsCarousel"
-                    class="carousel slide"
-                    data-bs-ride="carousel"
-            >
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <div style="background-color: white">
-                                <img
-                                        src="assets/events/event1.png"
-                                        alt=""
-                                        class="img-fluid"
-                                />
-                                <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div style="background-color: white">
-                                <img
-                                        src="assets/events/event1.png"
-                                        alt=""
-                                        class="img-fluid"
-                                />
-                                <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div style="background-color: white">
-                                <img
-                                        src="assets/events/event1.png"
-                                        alt=""
-                                        class="img-fluid"
-                                />
-                                <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div style="background-color: white">
-                                <img
-                                        src="assets/events/event1.png"
-                                        alt=""
-                                        class="img-fluid"
-                                />
-                                <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div style="background-color: white">
-                                <img
-                                        src="assets/events/event1.png"
-                                        alt=""
-                                        class="img-fluid"
-                                />
-                                <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div style="background-color: white">
-                                <img
-                                        src="assets/events/event1.png"
-                                        alt=""
-                                        class="img-fluid"
-                                />
-                                <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
-                            </div>
-                        </div>
-                    </div>
+                    <span style="color: #1b2347">kellner.</span>
+                    <span class="suffix">team</span>
                 </div>
-                <a
-                        class="carousel-control-prev bg-transparent w-aut"
-                        href="#eventsCarousel"
-                        role="button"
-                        data-bs-slide="prev"
+            </a>
+            <div
+                    class="d-flex flex-wrap gap-4 justify-content-around align-items-lg-center"
+            >
+                <div><a href="#about-us">Über uns</a></div>
+                <div><a href="#how-it-works">So funktioniert's</a></div>
+                <div><a href="#rating">Rezensionen</a></div>
+                <div><a href="#price">Preise</a></div>
+                <div>
+                    <a href="#contact" class="primary">Kontaktiere uns</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <img src="assets/hero.svg" alt="Hero image" style="width: 100%"/>
+
+            <div class="description d-flex flex-column mt-5 px-5" id="about-us">
+                <h3>Was ist kellner.team?</h3>
+                <p>
+                    kellner.team ist eine <b>Boniersoftware</b>, welche
+                    <b>ohne hohen Geräteaufwand</b> direkt auf den eigenen Smartphones
+                    als App downgeloaded werden kann. Durch ihr hohes Maß an
+                    Selbsterklärung werden zu den eingesparten Bestellapparenten auch
+                    Einschulungskosten gespart.
+                </p>
+            </div>
+
+            <div class="description">
+                <h3>Für wen ist kellner.team?</h3>
+                <p>
+                    Egal ob
+                    <b
+                    >Dorffest, Feuerwehrheurigen, Sportveranstaltung oder andere
+                        Veranstaltungen</b
+                    >
+                    an denen Sie sich ein gemütliches Beisammensein mit schneller
+                    Verköstigung wünschen, wir haben Ihre einfache Lösung dafür.
+                    <br/>
+                    <br/>
+                    Noch haben wir <b>kein Registrierkassasystem</b>, deshalb verkaufen
+                    wir bis auf Weiteres ausschließlich an Vereine.
+                </p>
+            </div>
+
+            <h2 id="rating" class="_title">veranstaltungen.</h2>
+
+            <div
+                    class="row mx-auto my-auto justify-content-center p-2 p-md-5"
+                    style="background-color: #ebefff"
+            >
+                <div
+                        id="eventsCarousel"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
                 >
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-3">
+                                <div style="background-color: white">
+                                    <img
+                                            src="assets/events/event1.png"
+                                            alt=""
+                                            class="img-fluid"
+                                    />
+                                    <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div style="background-color: white">
+                                    <img
+                                            src="assets/events/event1.png"
+                                            alt=""
+                                            class="img-fluid"
+                                    />
+                                    <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div style="background-color: white">
+                                    <img
+                                            src="assets/events/event1.png"
+                                            alt=""
+                                            class="img-fluid"
+                                    />
+                                    <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div style="background-color: white">
+                                    <img
+                                            src="assets/events/event1.png"
+                                            alt=""
+                                            class="img-fluid"
+                                    />
+                                    <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div style="background-color: white">
+                                    <img
+                                            src="assets/events/event1.png"
+                                            alt=""
+                                            class="img-fluid"
+                                    />
+                                    <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-3">
+                                <div style="background-color: white">
+                                    <img
+                                            src="assets/events/event1.png"
+                                            alt=""
+                                            class="img-fluid"
+                                    />
+                                    <div class="px-3 pb-3 pt-2">Feuerwehr Fest Ding Dong</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a
+                            class="carousel-control-prev bg-transparent w-aut"
+                            href="#eventsCarousel"
+                            role="button"
+                            data-bs-slide="prev"
+                    >
               <span
                       class="carousel-control-prev-icon"
                       aria-hidden="true"
               ></span>
-                </a>
-                <a
-                        class="carousel-control-next bg-transparent w-aut"
-                        href="#eventsCarousel"
-                        role="button"
-                        data-bs-slide="next"
-                >
+                    </a>
+                    <a
+                            class="carousel-control-next bg-transparent w-aut"
+                            href="#eventsCarousel"
+                            role="button"
+                            data-bs-slide="next"
+                    >
               <span
                       class="carousel-control-next-icon"
                       aria-hidden="true"
               ></span>
-                </a>
-            </div>
-        </div>
-
-        <h3 class="_subtitle pt-5 pb-3">Was unsere Kunden über uns sagen</h3>
-
-        <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-around" id="quotes">
-            <div class="col hidden">
-                <div class="quote p-4">
-                    <img src="assets/quote.svg" alt="quote">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
+                    </a>
                 </div>
             </div>
-            <div class="col hidden">
-                <div class="quote p-4">
-                    <img src="assets/quote.svg" alt="quote">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
-                </div>
-            </div>
-            <div class="col hidden">
-                <div class="quote p-4">
-                    <img src="assets/quote.svg" alt="quote">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                        ullamco laboris nisi.</p>
-                    <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
-                </div>
-            </div>
-            <div class="col hidden">
-                <div class="quote p-4">
-                    <img src="assets/quote.svg" alt="quote">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
-                </div>
-            </div>
-            <div class="col hidden">
-                <div class="quote p-4">
-                    <img src="assets/quote.svg" alt="quote">
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
-                </div>
-            </div>
-        </div>
 
-        <h2 id="how-it-works" class="_title mb-5">
-            so funktioniert’s.
-        </h2>
+            <h3 class="_subtitle pt-5 pb-3">Was unsere Kunden über uns sagen</h3>
 
-
-        <div class="work row row-cols-1 row-cols-md-2 g-5 align-items-center justify-content-center">
-            <div class="col">
-                <div class="hidden">
-                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
-                         style="max-width: 70%">
-                        <span class="step-count px-5 py-1 rounded-bottom-2">1. Schritt</span>
-                        <h3>Angebot</h3>
-                        <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+            <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-around" id="quotes">
+                <div class="col hidden">
+                    <div class="quote p-4">
+                        <img src="assets/quote.svg" alt="quote">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                        <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
+                    </div>
+                </div>
+                <div class="col hidden">
+                    <div class="quote p-4">
+                        <img src="assets/quote.svg" alt="quote">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
+                    </div>
+                </div>
+                <div class="col hidden">
+                    <div class="quote p-4">
+                        <img src="assets/quote.svg" alt="quote">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi.</p>
+                        <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
+                    </div>
+                </div>
+                <div class="col hidden">
+                    <div class="quote p-4">
+                        <img src="assets/quote.svg" alt="quote">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
+                    </div>
+                </div>
+                <div class="col hidden">
+                    <div class="quote p-4">
+                        <img src="assets/quote.svg" alt="quote">
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p class="person">Franz Huber, <b>Feuerwehrfest Dingdong</b></p>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="hidden">
-                    <div class="d-flex justify-content-center">
-                        <img style="max-width: 50%" src="assets/steps/step1.png" alt="">
+            <h2 id="how-it-works" class="_title mb-5">
+                so funktioniert’s.
+            </h2>
+
+
+            <div class="work row row-cols-1 row-cols-md-2 g-5 align-items-center justify-content-center">
+                <div class="col">
+                    <div class="hidden">
+                        <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                             style="max-width: 70%">
+                            <span class="step-count px-5 py-1 rounded-bottom-2">1. Schritt</span>
+                            <h3>Angebot</h3>
+                            <p>unverbindliches Angebot einholen über das Kontaktfeld auf unserer Website</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="d-flex justify-content-center">
+                            <img style="max-width: 50%" src="assets/steps/step1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="d-flex justify-content-center">
+                            <img style="max-width: 40%" src="assets/steps/screenshot.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                             style="max-width: 70%">
+                            <span class="step-count px-5 py-1 rounded-bottom-2">2. Schritt</span>
+                            <h3>Registrierung</h3>
+                            <p>mit der Buchungsbestätigung senden wird dir die Anmeldedaten für die App
+                                womit sich alle beteiligten Kellner auf dem eigenen Smartphone anmelden können</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                             style="max-width: 70%">
+                            <span class="step-count px-5 py-1 rounded-bottom-2">3. Schritt</span>
+                            <h3>Produkte und Tische</h3>
+                            <p>nun können alle Produkte samt Preise und Produktdetails und Tische samt Tischgruppen
+                                angelegt
+                                werden</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="d-flex justify-content-center">
+                            <img style="max-width: 50%" src="assets/steps/step2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="d-flex justify-content-center">
+                            <img style="max-width: 50%" src="assets/steps/step3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                             style="max-width: 70%">
+                            <span class="step-count px-5 py-1 rounded-bottom-2">4. Schritt</span>
+                            <h3>Drucker</h3>
+                            <p>wenn du im Horner Bezirk wohnst, bringen wir dir die Bondrucker gerne an deinen
+                                Veranstaltungsort - hierfür werden pro Drucker pro Tag Gebühren von 40€ verrechnet</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
+                             style="max-width: 70%">
+                            <span class="step-count px-5 py-1 rounded-bottom-2">5. Schritt</span>
+                            <h3>und los geht's</h3>
+                            <p>Auf einen reibungslosen, schnellen Ablauf! <br> Viel Freude damit!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hidden">
+                        <div class="d-flex justify-content-center">
+                            <img style="max-width: 50%" src="assets/steps/step4.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col">
-                <div class="hidden">
-                    <div class="d-flex justify-content-center">
-                        <img style="max-width: 40%" src="assets/steps/screenshot.png" alt="">
-                    </div>
-                </div>
+            <div class="prices rounded-2 p-5 mt-5" style="height: 100vh">
+                <h2 id="prices" class="_title_price">preise</h2>
             </div>
 
-            <div class="col">
-                <div class="hidden">
-                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
-                         style="max-width: 70%">
-                        <span class="step-count px-5 py-1 rounded-bottom-2">2. Schritt</span>
-                        <h3>Registrierung</h3>
-                        <p>mit der Buchungsbestätigung senden wird dir die Anmeldedaten für die App
-                            womit sich alle beteiligten Kellner auf dem eigenen Smartphone anmelden können</p>
-                    </div>
-
-                </div>
-            </div>
+            <h2 class="_title" id="contact">
+                kontaktformular.
+            </h2>
 
 
-            <div class="col">
-                <div class="hidden">
-                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
-                         style="max-width: 70%">
-                        <span class="step-count px-5 py-1 rounded-bottom-2">3. Schritt</span>
-                        <h3>Produkte und Tische</h3>
-                        <p>nun können alle Produkte samt Preise und Produktdetails und Tische samt Tischgruppen angelegt
-                            werden</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="hidden">
-                    <div class="d-flex justify-content-center">
-                        <img style="max-width: 50%" src="assets/steps/step2.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col">
-                <div class="hidden">
-                    <div class="d-flex justify-content-center">
-                        <img style="max-width: 50%" src="assets/steps/step3.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="hidden">
-                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
-                         style="max-width: 70%">
-                        <span class="step-count px-5 py-1 rounded-bottom-2">4. Schritt</span>
-                        <h3>Drucker</h3>
-                        <p>wenn du im Horner Bezirk wohnst, bringen wir dir die Bondrucker gerne an deinen
-                            Veranstaltungsort - hierfür werden pro Drucker pro Tag Gebühren von 40€ verrechnet</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col">
-                <div class="hidden">
-                    <div class="work-step d-flex flex-column gap-4 align-items-center px-5 rounded-2 mx-auto"
-                         style="max-width: 70%">
-                        <span class="step-count px-5 py-1 rounded-bottom-2">5. Schritt</span>
-                        <h3>und los geht's</h3>
-                        <p>Auf einen reibungslosen, schnellen Ablauf! <br> Viel Freude damit!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="hidden">
-                    <div class="d-flex justify-content-center">
-                        <img style="max-width: 50%" src="assets/steps/step4.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="prices rounded-2 p-5 mt-5" style="height: 100vh">
-            <h2 id="prices" class="_title_price">preise</h2>
-        </div>
-
-        <h2 class="_title" id="contact">
-            kontaktformular.
-        </h2>
-
-
-        <div style="height: 2000px"></div>
-    </main>
+            <div style="height: 2000px"></div>
+        </main>
+    </div>
 </div>
 </body>
 </html>

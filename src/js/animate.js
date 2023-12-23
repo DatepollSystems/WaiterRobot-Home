@@ -1,3 +1,5 @@
+import $ from "jquery"
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -8,5 +10,7 @@ const observer = new IntersectionObserver((entries) => {
     })
 })
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((element) => observer.observe(element))
+$(function () {
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((element) => observer.observe(element));
+})

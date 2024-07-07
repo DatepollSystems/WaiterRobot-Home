@@ -114,7 +114,7 @@ p {
 }
 
 @media screen and (min-width: 1201px) {
-  ._title, {
+  ._title {
     font-size: 5.625rem;
     left: -20%;
     padding-left: 25%;
@@ -131,7 +131,7 @@ p {
   }
 }
 
-header, footer {
+header {
   background-color: #ebefff;
 
   & a {

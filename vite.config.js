@@ -9,6 +9,7 @@ export default {
       input: {
         main: resolve(__dirname, 'src/index.html'),
         nested: resolve(__dirname, 'src/impressum/index.html'),
+        privacy: resolve(__dirname, 'src/privacy/index.html')
       },
     },
   },

@@ -25,7 +25,7 @@ jobs:
 
       - name: Upload artifact
         id: deployment
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           path: dist
           name: preview
@@ -61,3 +61,4 @@ jobs:
           port: ${{ secrets.PREVIEW_SSH_PORT }}
           source: dist/*
           target: /var/www/share/preview
+          strip_components: 1

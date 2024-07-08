@@ -36,11 +36,11 @@ $(function () {
             contentType: "application/json"
         })
             .done(function () {
-                alert("Nachricht wurde erfolgreich versenden. Du solltest in kürze eine Kopie an die angegebene E-Mail-Adresse erhalten.");
+                alert("Nachricht wurde erfolgreich versenden. Wir melden uns so schnell wie möglich bei dir.");
                 document.querySelector('form#contactForm').reset()
             })
             .fail(function () {
-                alert("Etwas ist schief gelaufen. Bitte versuche es erneut, oder schreibe direkt eine E-Mail an kontakt@kellner.team");
+                alert("Etwas ist schief gelaufen. Bitte versuche es erneut, oder schreibe direkt eine E-Mail an support@kellner.team");
             })
     });
 

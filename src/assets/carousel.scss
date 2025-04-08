@@ -31,7 +31,8 @@
       transform: translateX(-25%) !important;
     }
 
-    .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
       transform: translateX(0) !important;
     }
 

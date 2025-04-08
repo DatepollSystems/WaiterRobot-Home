@@ -1,0 +1,38 @@
+{
+  "assignees": ["Dafnik"],
+  "baseBranches": ["main"],
+  "commitBody": "See associated pull request for more information.",
+  "enabledManagers": ["npm", "github-actions"],
+  "extends": [
+    "config:recommended",
+    ":pinVersions",
+    "npm:unpublishSafe",
+    ":preserveSemverRanges",
+    ":rebaseStalePrs"
+  ],
+  "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "semanticCommitType": "build"
+  },
+  "packageRules": [
+    {
+      "groupName": "minor-updates",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
+    {
+      "groupName": "major-update",
+      "matchUpdateTypes": ["major"]
+    }
+  ],
+  "schedule": [
+    "after 11:00pm on the 1 day of the month",
+    "before 4am on the 2 day of the month",
+    "after 11:00pm on the 15 day of the month",
+    "before 4am on the 16 day of the month"
+  ],
+  "semanticCommitScope": "",
+  "semanticCommitType": "build",
+  "semanticCommits": "enabled",
+  "timezone": "Europe/Vienna"
+}

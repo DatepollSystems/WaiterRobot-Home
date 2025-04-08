@@ -19,7 +19,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 # Default to bash
@@ -36,7 +36,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: setup node and pnpm
-        uses: dafnik/setup-node-pnpm@v1
+        uses: dafnik/setup-node-pnpm@v4
         with:
           install: true
 

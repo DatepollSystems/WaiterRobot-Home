@@ -1,24 +1,25 @@
 {
   "name": "kellner.team",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "prettify": "prettier --write ."
+    "format": "prettier --write ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "packageManager": "pnpm@10.7.1",
+  "license": "MIT",
   "devDependencies": {
-    "prettier": "^3.0.3",
-    "sass": "^1.69.3",
-    "vite": "^4.4.11"
+    "@trivago/prettier-plugin-sort-imports": "5.2.2",
+    "prettier": "3.5.3",
+    "prettier-plugin-organize-attributes": "1.0.0",
+    "prettier-plugin-sort-json": "4.1.1",
+    "sass": "1.86.3",
+    "vite": "6.2.5"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.2",
-    "jquery": "^3.7.1"
+    "@popperjs/core": "2.11.8",
+    "bootstrap": "5.3.5",
+    "jquery": "3.7.1"
   }
 }
